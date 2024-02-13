@@ -1,0 +1,139 @@
+@font-face {
+  font-family: euclid;
+  src: url("../../../public/assets/fonts/Euclid\ Circular\ A\ Light.ttf");
+}
+
+@font-face {
+  font-family: myriad;
+  src: url("../../../public/assets/fonts/MYRIADPRO-REGULAR.OTF");
+}
+
+@font-face {
+  font-family: sf;
+  src: url("../../../public/assets/fonts/FontsFree-Net-SFProText-Regular.ttf");
+}
+
+@font-face {
+  font-family: vel;
+  src: url("../../../public/assets/fonts/VelodromaBasic-Regular.otf");
+}
+
+.spotlight-container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #000000, #0e0e0e 85%, #1c1c1c, #1f1f1f, #272727);
+}
+
+.spotlight-title {
+  height: 5vh;
+  margin: 10vh 0 0 5vw;
+  font-family: euclid;
+}
+
+.spotlight-p1 {
+  color: #fff;
+  font-size: 2vw;
+}
+
+.spotlight-p2 {
+  color: grey;
+  font-size: 1.2vw;
+}
+
+.trending-container {
+  width: 100%;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.trending-coins {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trending-categ {
+  width: 45%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trending-categ h5 {
+  color: #fff;
+  font-size: 1.4vw;
+  font-family: euclid;
+}
+
+.trending-coins h5 {
+  font-size: 1.4vw;
+  color: #fff;
+  font-family: euclid;
+}
+
+.coins .categories ul,
+li {
+  list-style: none;
+}
+
+.trending-table {
+  width: 100%;
+  margin-top: 3vh;
+  border-collapse: collapse;
+  font-family: euclid;
+  font-size: 1vw;
+}
+
+.trending-table td {
+  text-align: center;
+  padding: 8px;
+  color: #fff;
+  border-bottom: 1px solid rgba(105, 105, 105, 0.3);
+}
+
+.trending-table tr {
+  background-color: rgb(41, 40, 40);
+  height: 5vh;
+}
+
+.trending-table tr:hover {
+  background-color: #383838;
+}
+
+.trending-table th {
+  text-align: center;
+  padding: 8px;
+  color: #fff;
+  background-color: rgb(29, 28, 28);
+  height: 5vh;
+}
+
+.trending-table thead {
+  border-top-left-radius: 0.5rem;
+}
+
+.trending-table img {
+  width: fit-content;
+  height: 20px;
+}
+
+.price-change {
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
+.positive {
+  background-color: #26ad75;
+}
+
+.negative {
+  background-color: #f6465d;
+}
+
+.arrowUp {
+  color: #26ad75;
+}

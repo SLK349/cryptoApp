@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="0" errors="0" time="0.209">
+  <testsuite name="sendWelcomeMail" errors="0" failures="0" skipped="0" timestamp="2024-02-13T12:31:57" time="0.178" tests="2">
+    <testcase classname="sendWelcomeMail should send a welcome email" name="sendWelcomeMail should send a welcome email" time="0.002">
+    </testcase>
+    <testcase classname="sendPaymentMail should send a payment email" name="sendPaymentMail should send a payment email" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

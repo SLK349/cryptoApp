@@ -1,0 +1,15 @@
+@font-face {
+  font-family: euclid;
+  src: url("../../../public/assets/fonts/Euclid\ Circular\ A\ Light.ttf");
+}
+
+.message-modal {
+  background-color: black;
+  border: 1px solid #897ae7;
+  color: #fff;
+  padding: 15px;
+  border-radius: 0.25rem;
+  font-family: euclid;
+  position: absolute;
+  bottom: 50px;
+}

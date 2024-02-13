@@ -1,0 +1,3 @@
+export const REACT_APP_PAYPAL_CLIENT_ID =
+  process.env.REACT_APP_PAYPAL_CLIENT_ID || "AdGTFFomaENh0mhQszDKLj_81vtt3mzjyOY7T-OhQwdgz6vDBzDxfJtXaZKC0gEaX6FLLMw8C9b2HM99";
+export const SECRET_PAYPAL = process.env.SECRET_PAYPAL || "EELfya2mLDLW0obt-Qz2sSsz_ZKi5MQCm9Yxi-IGLFOTm1z2F6jlpnYSSTo2i0glxd--w6jAwrRgKK0V";

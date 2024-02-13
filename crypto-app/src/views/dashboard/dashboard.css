@@ -1,0 +1,519 @@
+@font-face {
+  font-family: inter;
+  src: url("../../../public/assets/fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: vel;
+  src: url("../../../public/assets/fonts/VelodromaBasic-Regular.otf");
+}
+
+@font-face {
+  font-family: myriad;
+  src: url("../../../public/assets/fonts/MYRIADPRO-REGULAR.OTF");
+}
+
+@font-face {
+  font-family: euclid;
+  src: url("../../../public/assets/fonts/Euclid\ Circular\ A\ Light.ttf");
+}
+
+#root {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container-home {
+  flex: 1;
+  font-family: euclid;
+  width: 100%;
+  max-width: 100vw;
+  font-size: 1.3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #000000, #0e0e0e 40%, #171717, #1f1f1f, #272727);
+  position: relative;
+  color: white;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.solde h5 {
+  font-size: 1.8vw;
+}
+
+.solde-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 85%;
+  height: 20vh;
+}
+
+.solde-button p {
+  font-size: 1.7vw;
+}
+
+.addTransaction {
+  border: none;
+  border-radius: 0.5rem;
+  width: 13vw;
+  height: 4.5vh;
+  font-size: 0.9vw;
+  color: #fff;
+  background-color: rgb(67, 138, 224);
+  cursor: pointer;
+  font-family: euclid;
+}
+
+.variation-solde {
+  display: flex;
+  width: 85%;
+  height: 20vh;
+  margin-top: 3%;
+  align-items: top;
+}
+
+.variation-solde div {
+  margin: 2vw;
+}
+
+.performer-name {
+  color: #545454;
+}
+
+.home-title {
+  width: 85%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  font-size: 1.5vw;
+}
+
+.stats {
+  display: flex;
+  width: 90%;
+  height: 50vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actif {
+  margin-top: 5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1.2vh; */
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2vh;
+}
+
+.actif-title {
+  font-size: 2.3vw;
+  width: 100%;
+  margin-left: 16vw;
+}
+
+.actif-container {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  font-size: 1;
+  font-family: euclid;
+  margin-top: 5vh;
+}
+
+.actif-container ul {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(29, 28, 28);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.actif-container li {
+  width: 100%;
+  color: #fff;
+  list-style: none;
+  text-align: center;
+  font-size: 0.9vw;
+}
+
+.container-trade {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  gap: 1.5vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(41, 40, 40);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.invest-trade-info {
+  width: 100%;
+  /* height: 5vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.invest-trade-info ul {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.invest-trade-info li {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  font-size: 1vw;
+  font-family: euclid;
+}
+
+/* 
+.actif table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1vw;
+  margin: 3vw;
+}
+
+.actif th {
+  font-size: 1.2vw;
+}
+
+.actif th,
+td {
+  text-align: center;
+  height: 5vh;
+}
+
+.actif tr {
+  width: 100%;
+  border-bottom: 1px solid rgb(98, 98, 98);
+  line-height: 8vh;
+}
+
+.actif tr:hover {
+  background-color: #222f3e;
+} */
+
+#del-btn {
+  border: none;
+  color: #ff5d5d;
+  /* background-color: #171c35; */
+  font-size: 1.3vw;
+  cursor: pointer;
+}
+
+#del-btn:hover {
+  animation: trash 0.5s ease-in infinite;
+}
+
+@keyframes trash {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.graph {
+  height: 80%;
+  width: 55%;
+  border-radius: 0.75em;
+  /* box-shadow: 1px 1px 10px 2px rgba(44, 44, 48, 0.75); */
+  overflow: hidden;
+}
+
+.repartition {
+  height: 80%;
+  width: 40%;
+  border-radius: 0.75em;
+  /* box-shadow: 1px 1px 10px 2px rgba(19, 19, 34, 0.75); */
+  /* box-shadow: 1px 1px 10px 2px rgba(44, 44, 48, 0.75); */
+  overflow: hidden;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  color: #2ecc71;
+}
+
+.inactive {
+  color: #e74c3c;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(22, 21, 28);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.chart-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  font-size: 2vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .stats {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55vh;
+    justify-content: space-between;
+  }
+
+  .graph {
+    height: 300px;
+    width: 55%;
+  }
+
+  .repartition {
+    height: 300px;
+    width: 55%;
+  }
+}
+
+@media (max-width: 425px) {
+  .solde h5 {
+    font-size: 4.8vw;
+  }
+
+  .solde p {
+    font-size: 4.8vw;
+  }
+
+  .addTransaction {
+    width: 22vw;
+    font-size: 2.5vw;
+  }
+
+  .variation-solde {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .variation-solde p {
+    font-size: 3vw;
+  }
+
+  .home-title h3 {
+    font-size: 4vw;
+  }
+
+  .graph {
+    width: 90%;
+  }
+
+  .repartition {
+    width: 90%;
+  }
+
+  .actif-container ul {
+    width: 90%;
+  }
+
+  .actif-container ul li {
+    font-size: 1vw;
+    width: 10%;
+  }
+
+  .invest-trade-info {
+    width: 100%;
+  }
+
+  .invest-trade-info ul {
+    width: 90%;
+  }
+
+  .invest-trade-info li {
+    font-size: 2.2vw;
+  }
+
+  #del-btn {
+    font-size: 2.5vw;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 867px) {
+  .solde h5 {
+    font-size: 3vw;
+  }
+
+  .solde p {
+    font-size: 3vw;
+  }
+
+  .addTransaction {
+    width: 17vw;
+    font-size: 1.7vw;
+  }
+
+  .variation-solde {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .variation-solde p {
+    font-size: 2vw;
+  }
+
+  .home-title h3 {
+    font-size: 3vw;
+  }
+
+  .stats {
+    height: 55vh;
+  }
+
+  .graph {
+    width: 90%;
+  }
+
+  .repartition {
+    width: 90%;
+  }
+
+  .actif-container ul {
+    width: 90%;
+  }
+
+  .actif-container li {
+    font-size: 2vw;
+    width: 10%;
+  }
+
+  .invest-trade-info {
+    width: 100%;
+  }
+
+  .invest-trade-info ul {
+    width: 90%;
+  }
+
+  .invest-trade-info li {
+    font-size: 1.8vw;
+  }
+
+  #del-btn {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 868px) and (max-width: 1024px) {
+  .solde h5 {
+    font-size: 3vw;
+  }
+
+  .solde p {
+    font-size: 3vw;
+  }
+
+  .addTransaction {
+    width: 15vw;
+    font-size: 1.5vw;
+  }
+
+  .variation-solde {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .variation-solde p {
+    font-size: 2vw;
+  }
+
+  .home-title h3 {
+    font-size: 3vw;
+  }
+
+  .stats {
+    height: 60vh;
+  }
+
+  .graph {
+    width: 80%;
+    height: 45%;
+  }
+
+  .repartition {
+    width: 80%;
+    height: 45%;
+  }
+
+  .actif {
+    gap: 1.5vh;
+  }
+
+  .actif-container ul {
+    width: 90%;
+  }
+
+  .actif-container li {
+    font-size: 1.8vw;
+    width: 15%;
+  }
+
+  .invest-trade-info {
+    width: 100%;
+  }
+
+  .invest-trade-info ul {
+    width: 90%;
+  }
+
+  .invest-trade-info li {
+    font-size: 1.6vw;
+  }
+
+  #del-btn {
+    font-size: 1.7vw;
+  }
+}

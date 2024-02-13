@@ -1,0 +1,145 @@
+@font-face {
+  font-family: machina;
+  src: url("../../../public/assets/fonts/NeueMachina-Light.otf");
+}
+
+.save-trade-container {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(78, 78, 78, 0.9);
+  inset: 0;
+}
+
+.save-trade-bull {
+  width: 35%;
+  height: 65%;
+  padding: 3% 0%;
+  background-color: #1e1e1e;
+  background-image: url("../../asset/bulls2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right -60px;
+  border-radius: 0.75em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.save-trade-bear {
+  width: 35%;
+  height: 65%;
+  padding: 3% 0%;
+  background-color: #1e1e1e;
+  background-image: url("../../asset/bear2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right -60px;
+  border-radius: 0.75em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.save-trade-title {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.save-trade-title button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.leave-save-trade {
+  color: #fff;
+  font-size: 25px;
+}
+
+.save-trade-stats {
+  width: 90%;
+  height: fit-content;
+}
+
+.nameNlev {
+  display: flex;
+  width: 250px;
+  height: 15%;
+  justify-content: space-around;
+  align-items: end;
+  color: #fff;
+  font-size: 22px;
+}
+
+.save-trade-pnl-container {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.save-trade-pnl {
+  width: 100%;
+  height: 40%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #fff;
+  font-size: 23px;
+}
+
+.grey {
+  color: #b0b0b0;
+}
+
+.save-trade-price-container {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.save-trade-price {
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 18px;
+}
+
+.save-trade-bottom {
+  height: 25%;
+  width: 98%;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+
+#save-btn {
+  color: #e0e0e0;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+#save-btn:hover {
+  scale: 1.2;
+}
+
+.green {
+  color: #49bc4d;
+}
+
+.red2 {
+  color: #cf4d4d;
+}
